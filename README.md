@@ -12,3 +12,6 @@ There are only 3 commands that you should use:
 2. just run {day} {part} (To run you project)
    - This will first build the required files and then run it 
    - Output is visible via stdout
+
+3. just clean 
+   - This will clean all inputs and build files
