@@ -1,0 +1,6 @@
+.env
+build/
+external/
+.vscode/
+
+*input*.txt
