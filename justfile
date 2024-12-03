@@ -8,10 +8,9 @@ build_parser day:
     cmake -DCOMPILE_SCRIPTS=ON  -S . -B build 
 
 clean:
+    ./scripts/run2.sh
     cmake --build build --target clean_all
-    if [ -f input1.txt ]; then
-    rm input1.txt
-    fi
+  
 
 create day:
     ./scripts/run.sh {{day}}
