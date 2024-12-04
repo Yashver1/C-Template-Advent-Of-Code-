@@ -14,3 +14,12 @@ target_link_libraries(part2 PRIVATE Catch2::Catch2WithMain)
 target_include_directories(part2 PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
+
+#executable for test
+add_executable(part2_test ${CMAKE_CURRENT_SOURCE_DIR}/lib/part2.cpp)
+target_link_libraries(part2_test PRIVATE Catch2::Catch2WithMain)
+target_include_directories(part2_test PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+

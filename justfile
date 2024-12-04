@@ -2,6 +2,7 @@ build day part:
     mkdir -p build
     cmake -DDAY_NUMBER={{day}} -DCOMPILE_SCRIPTS=OFF -S . -B build
     cmake --build build --target part{{part}}
+    cmake --build build --target part{{part}}_test
 
 build_parser day:
     mkdir -p build
@@ -24,5 +25,6 @@ get-input day:
 run day part:
     just build {{day}} {{part}}
     ./build/day-{{day}}/part{{part}}/part{{part}}
+    
 
 
